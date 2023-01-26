@@ -1,0 +1,16 @@
+version: "3.7"
+services:
+  mm2:
+    restart: always
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./:/mm2_api
+    ports:
+      - 127.0.0.1:${MM2_PORT}:${MM2_PORT}
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "20m"
+        max-file: "10"
