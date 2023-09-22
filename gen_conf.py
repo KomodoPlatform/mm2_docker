@@ -25,7 +25,7 @@ else:
 if os.getenv('MM2_SEEDNODES'):
 	MM2_SEEDNODES = os.getenv('MM2_SEEDNODES').split(" ")
 else:
-	MM2_SEEDNODES = ["80.82.76.214", "89.248.168.39", "89.248.173.231"]
+	MM2_SEEDNODES = ["seed1.komodo.earth", "seed2.komodo.earth", "seed3.komodo.earth"]
 MM2_RPC_IP = os.getenv('MM2_RPC_IP')
 
 special_chars = ["@", "~", "-", "_", "|", ":", "+"]
